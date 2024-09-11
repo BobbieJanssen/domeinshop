@@ -22,8 +22,20 @@ Table of Contents:
     color: #1C2B32;
     font-weight: 300;
     font-size: 8px;
+    text-align: center;
 }
 
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    width: 600px;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
 
 /* --------------------------------------- 2. Typography --------------------------------------- */
 
@@ -32,33 +44,70 @@ body {
     background-color: white;
 }
 
+p {
+    text-align: left;
+}
+
+section summary{
+    overflow: hidden;
+    wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    text-align: start;
+}
+
 h1 {
     color: #1C2B32;
-    font-size: 45px;
+    font-size: 42px;
     font-stretch: ultra-expanded;
     align-self: center;
     font-weight: 700;
-    margin-top: -50px;
+    margin-top: 0;
 }
 
+h2 {
+    color: #1C2B32;
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+    margin: 25px auto;
+    font-stretch: 100%;
+    height: 20px;
+    width: 300px;
+}
 #header-text{
     color: #1C2B32;
     font-size: 6px;
     margin-top: -70px;
 }
 header p {
-    font-size: 8px;
-    margin: 4px 0 20px 0;
+    font-size: 6px;
+    margin: -1px 0 10px 0;
     color: #1C2B32;
     font-weight: 300;
 }
 
 ::placeholder {
     color: #1C2B32;
-    font-size: 8px;
+    font-size: 7px;
     font-weight: 100;
-    padding-left: 15px;
+    padding-left: 5px;
 }
+
+a {
+    color: grey;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
 
 /* --------------------------------------- 3 Areas --------------------------------------- */
 
@@ -68,17 +117,18 @@ header p {
 header {
     position: relative;
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     text-align: center;
 }
 
 .header-image {
     background-image: url("/assets/images/mountains.jpg");
+    object-fit: contain;
     background-size: cover; /* Ensures the entire image is shown, scaling within the container */
-    background-position: center; /* Keeps the image centered */
+    background-position: center 40%; /* Keeps the image centered */
     background-repeat: no-repeat; /* Prevents image repetition */
     overflow: hidden;
-    height: 35vh; /* Set the height of the header */
+    height: 40vh; /* Set the height of the header */
     width: 100vw; /* Full width of the viewport */
     display: flex;
     align-items: center;
@@ -95,16 +145,16 @@ header {
     fex-direction: row;
     margin-left: 10%;
     resize: none;
-    width: 280px;
+    width: 230px;
     height: 4vh;
     font-size: 2px;
-
 }
 
 .input {
     background-color: transparent;
     color: #1C2B32;
     padding-left: 10px;
+    text-align: left;
     font-weight: 300;
     font-size: 8px;
     border: solid 1px #1C2B32;
@@ -116,7 +166,7 @@ header {
 .search-button {
     background-color: #1C2B32;
     color: white;
-    font-size: 8px;
+    font-size: 6px;
     border: solid 1px #1C2B32;
     width: 40%;
     border-top-right-radius: 20px;
@@ -125,16 +175,60 @@ header {
 
 /* ----------------------------- 3.2 Testimonial ----------------------------- */
 
-.testimonial-section {}
+.testimonial-section {
 
+}
+
+.quote-one, .quote-two {
+    background-color: white;
+    margin: 20px auto;
+}
+
+.quote-one {
+
+}
+.quote-two {
+
+}
 
 /* ----------------------------- 3.3 Support ----------------------------- */
 
+img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
 
 
+
+.contact-button {
+    background-color: #1C2B32;
+    color: white;
+    border-radius: 20%;
+    align-self: left;
+    width: 20px;
+    height: 10px;
+    margin-top: 10px;
+}
+
+#contact {
+
+}
 /* ----------------------------- 3.4 FAQ ----------------------------- */
 
+.faq-section {
 
+}
+
+.faq {
+    background-color: #899CA0;
+    width: 400px;
+    padding: 15px;
+    margin: 2px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+}
 
 /* ----------------------------- 3.5 Footer ----------------------------- */
 
