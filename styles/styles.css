@@ -28,10 +28,11 @@ Table of Contents:
 main {
     max-width: 1000px;
     margin: auto;
+
 }
 
 section {
-    width: 600px;
+    width: 400px;
     display: inline-block;
     align-items: center;
     text-align: center;
@@ -42,6 +43,9 @@ section {
 body {
     font-family: "Poppins", sans-serif;
     background-color: white;
+    justify-content: center;
+    align-items: center;
+
 }
 
 p {
@@ -52,7 +56,7 @@ section summary{
     overflow: hidden;
     wrap: wrap;
     box-sizing: border-box;
-    width: 100%;
+    width: 400px;
     padding: 5px;
     text-align: start;
 }
@@ -86,6 +90,7 @@ header p {
     margin: -1px 0 10px 0;
     color: #1C2B32;
     font-weight: 300;
+    text-align: center;
 }
 
 ::placeholder {
@@ -176,12 +181,18 @@ header {
 /* ----------------------------- 3.2 Testimonial ----------------------------- */
 
 .testimonial-section {
-
+    width: 100%;
 }
 
 .quote-one, .quote-two {
     background-color: white;
     margin: 20px auto;
+    height: 80px;
+    text-align: center;
+    width: 400px;
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    padding: 30px;
 }
 
 .quote-one {
@@ -194,30 +205,46 @@ header {
 /* ----------------------------- 3.3 Support ----------------------------- */
 
 img {
-    width: 100%;
+    width: 400px;
     height: auto;
     align-self: center;
+    border-radius: 4px;
 }
 
-
-
-.contact-button {
-    background-color: #1C2B32;
-    color: white;
-    border-radius: 20%;
-    align-self: left;
-    width: 20px;
-    height: 10px;
-    margin-top: 10px;
+.support-section p {
+    margin-top: 12px;
+    width: 100%;
 }
+
+/*.contact-button {*/
+/*    max-width: 100%;*/
+/*    min-width: 90px;*/
+/*    height: 100%;*/
+/*}*/
 
 #contact {
+    background-color: #1C2B32;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    min-width: 90px;
+    max-width: 100%;
+    height: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    float: left;
+}
 
+#contact:hover{
+    color: #899CA0;
 }
 /* ----------------------------- 3.4 FAQ ----------------------------- */
 
 .faq-section {
-
+    margin-bottom: 30px;
+    width: 400px;
+    content: center;
 }
 
 .faq {
@@ -228,7 +255,29 @@ img {
     border-radius: 5px;
     color: white;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+
 }
 
 /* ----------------------------- 3.5 Footer ----------------------------- */
+.footer-section {
+    background-color: #1C2B32;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    max-width: 100%;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    display: inline-block;
+}
 
+.footer {
+    position: absolute;
+    font-size: 6px;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
