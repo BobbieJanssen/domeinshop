@@ -188,7 +188,6 @@ header {
     width: 100%;
 }
 
-
 .quote-one, .quote-two {
     background-color: white;
     margin: 20px auto;
@@ -197,7 +196,6 @@ header {
     width: 600px;
     border-radius: 4px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    /*padding: 30px;*/
     padding-top: 25px;
     padding-left: 70px;
     padding-right: 30px;
@@ -207,12 +205,6 @@ img p {
     display: inline-block;
     float: left;
     vertical-align: middle;
-}
-
-.quote-one {
-    /*padding-top: 15px;*/
-    /*padding-left: 70px;*/
-    /*padding-right: 30px;*/
 }
 
 #john, #jane {
@@ -231,12 +223,11 @@ img p {
 .john p, .jane p {
     width: 180px;
     font-style: italic;
-    vertical-align: text-top;
     margin-left: 33px;
-    padding-top: 5px;
+    padding-top: 13px;
 }
 
-#quote {
+#quote-one, #quote-two {
     height: 11px;
     width: 11px;
     position: absolute;
