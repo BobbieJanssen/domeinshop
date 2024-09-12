@@ -32,7 +32,7 @@ main {
 }
 
 section {
-    width: 400px;
+    width: 600px;
     display: inline-block;
     align-items: center;
     text-align: center;
@@ -52,7 +52,7 @@ p {
     text-align: left;
 }
 details {
-    width: 400px;
+    width: 600px;
     margin: 5px auto;
 }
 
@@ -60,7 +60,7 @@ section summary{
     overflow: hidden;
     wrap: wrap;
     box-sizing: border-box;
-    width: 400px;
+    width: 600px;
     padding: 5px;
     text-align: start;
     align-self: center;
@@ -189,40 +189,83 @@ header {
     width: 100%;
 }
 
+
 .quote-one, .quote-two {
     background-color: white;
     margin: 20px auto;
-    height: 120px;
-    text-align: center;
-    width: 400px;
+    height: 100px;
+    text-align: left;
+    width: 600px;
     border-radius: 4px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    padding: 30px;
+    /*padding: 30px;*/
+    padding-top: 25px;
+    padding-left: 70px;
+    padding-right: 30px;
+}
+
+img p {
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
 }
 
 .quote-one {
+    /*padding-top: 15px;*/
+    /*padding-left: 70px;*/
+    /*padding-right: 30px;*/
+}
+/*.quote-two {*/
+/*    padding-left: 70px;*/
+/*    padding-right: 30px;*/
+/*    margin-bottom: 2px;*/
+/*}*/
 
-}
-.quote-two {
-    margin-bottom: 2px;
-}
+/* div #jane {*/
+/*    display: inline-block;*/
+/*    vertical-align: baseline;*/
+/*}*/
 
-.jane {
-    display: inline-block;
-    align-self: start;
-}
-#jane {
+/*.jane {*/
+/*    display: block;*/
+/*}*/
+/*#jane {*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    border-radius: 50%;*/
+/*    align-self: start;*/
+/*    display: flex;*/
+/*    vertical-align: text-top;*/
+/*}*/
+
+/*.john {*/
+/*    display: flex;*/
+/*}*/
+
+#john, #jane {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     align-self: start;
-    display: flex;
+    vertical-align: middle;
+    float: left;
+}
+
+.jane, .john {
+    margin-top: 10px;
+}
+
+.john p, .jane p {
+    width: 180px;
+    font-style: italic;
     vertical-align: text-top;
+    margin-left: 50px;
+    padding-top: 10px;
 }
 /* ----------------------------- 3.3 Support ----------------------------- */
 
 img {
-    width: 400px;
+    width: 600px;
     height: auto;
     align-self: center;
     border-radius: 4px;
@@ -261,7 +304,6 @@ img {
 .faq-section {
     margin-bottom: 30px;
     width: 100%;
-    float: center;
 }
 
 .faq {
