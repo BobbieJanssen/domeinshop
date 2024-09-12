@@ -45,7 +45,6 @@ body {
     background-color: white;
     justify-content: center;
     align-items: center;
-
 }
 
 p {
@@ -80,7 +79,7 @@ h2 {
     font-weight: 600;
     text-align: center;
     font-size: 14px;
-    margin: 19px  auto;
+    margin: 19px auto;
     font-stretch: 100%;
     height: 20px;
     width: 300px;
@@ -134,12 +133,12 @@ header {
 .header-image {
     background-image: url("/assets/images/mountains.jpg");
     object-fit: contain;
-    background-size: cover; /* Ensures the entire image is shown, scaling within the container */
-    background-position: center 40%; /* Keeps the image centered */
-    background-repeat: no-repeat; /* Prevents image repetition */
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
     overflow: hidden;
-    height: 40vh; /* Set the height of the header */
-    width: 100vw; /* Full width of the viewport */
+    height: 40vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,36 +214,10 @@ img p {
     /*padding-left: 70px;*/
     /*padding-right: 30px;*/
 }
-/*.quote-two {*/
-/*    padding-left: 70px;*/
-/*    padding-right: 30px;*/
-/*    margin-bottom: 2px;*/
-/*}*/
-
-/* div #jane {*/
-/*    display: inline-block;*/
-/*    vertical-align: baseline;*/
-/*}*/
-
-/*.jane {*/
-/*    display: block;*/
-/*}*/
-/*#jane {*/
-/*    width: 30px;*/
-/*    height: 30px;*/
-/*    border-radius: 50%;*/
-/*    align-self: start;*/
-/*    display: flex;*/
-/*    vertical-align: text-top;*/
-/*}*/
-
-/*.john {*/
-/*    display: flex;*/
-/*}*/
 
 #john, #jane {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     align-self: start;
     vertical-align: middle;
@@ -259,8 +232,16 @@ img p {
     width: 180px;
     font-style: italic;
     vertical-align: text-top;
-    margin-left: 50px;
-    padding-top: 10px;
+    margin-left: 33px;
+    padding-top: 5px;
+}
+
+#quote {
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -1px;
 }
 /* ----------------------------- 3.3 Support ----------------------------- */
 
@@ -269,18 +250,13 @@ img {
     height: auto;
     align-self: center;
     border-radius: 4px;
+    margin-top: 10px;
 }
 
 .support-section p {
     margin-top: 12px;
     width: 100%;
 }
-
-/*.contact-button {*/
-/*    max-width: 100%;*/
-/*    min-width: 90px;*/
-/*    height: 100%;*/
-/*}*/
 
 #contact {
     background-color: #1C2B32;
@@ -314,7 +290,6 @@ img {
     border-radius: 5px;
     color: white;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
-
 }
 
 /* ----------------------------- 3.5 Footer ----------------------------- */
