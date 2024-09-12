@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Global Styles
+    2. Typografie
+    3. Areas
+        3.1 Header
+        3.2 Testimonial
+        3.3 Support
+        3.4 Faq
+        3.5 Footer
+
+        grijs #899CA0 en donkergroen #1C2B32
+////////////////////////////////////////////////////////////////////////*/
+
+/* --------------------------------------- 1. Global Styles --------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #1C2B32;
+    font-weight: 300;
+    font-size: 8px;
+    text-align: center;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+section {
+    width: 600px;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+
+/* --------------------------------------- 2. Typography --------------------------------------- */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: left;
+}
+details {
+    width: 600px;
+    margin: 5px auto;
+}
+
+section summary{
+    overflow: hidden;
+    wrap: wrap;
+    box-sizing: border-box;
+    width: 600px;
+    padding: 5px;
+    text-align: start;
+    align-self: center;
+}
+
+h1 {
+    color: #1C2B32;
+    font-size: 42px;
+    font-stretch: ultra-expanded;
+    align-self: center;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+h2 {
+    color: #1C2B32;
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+    margin: 19px auto;
+    font-stretch: 100%;
+    height: 20px;
+    width: 300px;
+}
+#header-text{
+    color: #1C2B32;
+    font-size: 6px;
+    margin-top: -70px;
+}
+header p {
+    font-size: 6px;
+    margin: -1px 0 10px 0;
+    color: #1C2B32;
+    font-weight: 300;
+    text-align: center;
+}
+
+::placeholder {
+    color: #1C2B32;
+    font-size: 7px;
+    font-weight: 100;
+    padding-left: 5px;
+}
+
+a {
+    color: grey;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
+
+/* --------------------------------------- 3 Areas --------------------------------------- */
+
+
+
+/* ----------------------------- 3.1 Header ----------------------------- */
+header {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+}
+
+.header-image {
+    background-image: url("/assets/images/mountains.jpg");
+    object-fit: contain;
+    background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a7ecb2;
+
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    fex-direction: row;
+    margin-left: 10%;
+    resize: none;
+    width: 230px;
+    height: 4vh;
+    font-size: 2px;
+}
+
+.input {
+    background-color: transparent;
+    color: #1C2B32;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: 300;
+    font-size: 8px;
+    border: solid 1px #1C2B32;
+    width: 60%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.search-button {
+    background-color: #1C2B32;
+    color: white;
+    font-size: 6px;
+    border: solid 1px #1C2B32;
+    width: 40%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* ----------------------------- 3.2 Testimonial ----------------------------- */
+
+.testimonial-section {
+    width: 100%;
+}
+
+
+.quote-one, .quote-two {
+    background-color: white;
+    margin: 20px auto;
+    height: 100px;
+    text-align: left;
+    width: 600px;
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    /*padding: 30px;*/
+    padding-top: 25px;
+    padding-left: 70px;
+    padding-right: 30px;
+}
+
+img p {
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+}
+
+.quote-one {
+    /*padding-top: 15px;*/
+    /*padding-left: 70px;*/
+    /*padding-right: 30px;*/
+}
+
+#john, #jane {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    align-self: start;
+    vertical-align: middle;
+    float: left;
+}
+
+.jane, .john {
+    margin-top: 10px;
+}
+
+.john p, .jane p {
+    width: 180px;
+    font-style: italic;
+    vertical-align: text-top;
+    margin-left: 33px;
+    padding-top: 5px;
+}
+
+#quote {
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -1px;
+}
+/* ----------------------------- 3.3 Support ----------------------------- */
+
+img {
+    width: 600px;
+    height: auto;
+    align-self: center;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.support-section p {
+    margin-top: 12px;
+    width: 100%;
+}
+
+#contact {
+    background-color: #1C2B32;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    min-width: 90px;
+    max-width: 100%;
+    height: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    float: left;
+}
+
+#contact:hover{
+    color: #899CA0;
+}
+/* ----------------------------- 3.4 FAQ ----------------------------- */
+
+.faq-section {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.faq {
+    background-color: #899CA0;
+    width: 400px;
+    padding: 15px;
+    margin: 2px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+}
+
+/* ----------------------------- 3.5 Footer ----------------------------- */
+.footer-section {
+    background-color: #1C2B32;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    max-width: 100%;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    display: inline-block;
+}
+
+.footer {
+    position: absolute;
+    font-size: 6px;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
